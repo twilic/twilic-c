@@ -2,7 +2,7 @@
 
 C implementation of the Twilic wire format and session-aware encoder/decoder.
 
-This library's default `twilic_encode` / `twilic_decode` API targets Twilic v2.
+This library's default `twilic_encode` / `twilic_decode` API targets Twilic v2 (v3 support pending).
 
 The public API in `include/twilic/twilic.h` is C11. Implementation sources in `src/*.c` are algorithmically aligned with [twilic-cpp](https://github.com/twilic/twilic-cpp) and spec tests with [twilic-go](https://github.com/twilic/twilic-go) `internal/core`. Sources currently compile as C++17 for parity with the reference implementation while the mechanical C11 port (structs, manual memory, no STL) proceeds module by module.
 
